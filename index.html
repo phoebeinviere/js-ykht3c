@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-<style>
-table, th, td {border: 1px solid;}
-
-table {border-collapse: collapse;}
-
-th, td {width: 150px;}
-
-td {
-  
-}
-
-</style>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() { 
+  $('#test').html('<em>It works!</em>');
+  $('#test em').css({color: '#0c0'});
+}); 
+</script>
+</head>
+<body>
 <body onload="stripeTables('flowerTerpenes','blue');">
 <div style="overflow-x:auto;">
   <table id="flowerTerpenes">

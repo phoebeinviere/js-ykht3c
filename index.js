@@ -1,3 +1,4 @@
+import './style.css';
 
 $(document).ready(function () {
   $('tbody tr td:not(":first")').each(
