@@ -11,13 +11,13 @@ $(document).ready(function () {
             fTcolor04 = 0.08,
             fTcolor05 = 0.10,
             fTcolor06 = 0.12,
-            fTcolor07 = 0,
-            fTcolor08 = 0.02,
-            fTcolor09 = 0.04,
-            fTcolor = 0.06,
-            fTcolor4 = 0.08,
-            fTcolor5 = 0.10,
-            fTcolor6 = 0.12,
+            fTcolor07 = 0.14,
+            fTcolor08 = 0.16,
+            fTcolor09 = 0.18,
+            fTcolor10 = 0.20,
+            fTcolor11 = 0.22,
+            fTcolor12 = 0.24,
+            fTcolor13 = 0.26,
             value = $(this).text();
         
         if (value == 0) {
