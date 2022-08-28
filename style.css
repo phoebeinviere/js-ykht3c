@@ -4,6 +4,6 @@ table {border-collapse: collapse;}
 
 th, td {width: 150px;}
 
-td {
-  
+td.fTColor1 {
+  background-color: #fafa6e;
 }

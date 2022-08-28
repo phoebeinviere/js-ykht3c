@@ -4,17 +4,18 @@ $(document).ready(function () {
   $('tbody tr td:not(":first")').each(
 
     function() {
-        var vGood = 30,
+        var fTColor1 = 0.02,
+            fTColor2 = 0.04,
             good = 25,
             avg = 20,
             poor = 15,
             vPoor = 10,
             score = $(this).text();
         
-        if (score >= vGood) {
-            $(this).addClass('vGood');
+        if (score >= fTColor1) {
+            $(this).addClass('fTcolor1');
         }
-        else if (score < vGood && score >= good) {
+        else if (score < fTColor1 && score >= fTColor2) {
             $(this).addClass('good');
         }
         else if (score <good && score >= avg) {
