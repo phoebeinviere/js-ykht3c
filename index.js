@@ -1,7 +1,7 @@
 import './style.css';
 
 $(document).ready(function () {
-  $('tbody tr td').each(
+  $(this.td).each(
 
     function() {
         var fTcolor1 = 0.02,
