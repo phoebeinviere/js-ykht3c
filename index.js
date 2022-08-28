@@ -22,15 +22,3 @@ for (var i= 0; i < 2; i++) {
   document.write('<br>');
 }
 */
-
-let table = document.createElement('table');
-let row = table.insertRow();
-let cell = row.insertCell();
-for (let row of flowerTerp) {
-  table.insertRow();
-  for (let cell of row) {
-    let newCell = table.rows[table.rows.length - 1].insertCell();
-    newCell.textContent = cell;
-  }
-}
-document.body.appendChild(table);
