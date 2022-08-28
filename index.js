@@ -199,9 +199,6 @@ $(document).ready(function () {
           }
         }
       });
-      document.getElementById("s01").addEventListener("click", myFunction);
-      function myFunction() {
-        document.getElementsByClassName("s01").style="visibility: collapse";
-      }
+      
     }
   );

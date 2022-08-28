@@ -254,4 +254,10 @@
   </h2>
   <button id="s01" onclick="myFunction()">Kushberry</button> 
 </div>
+<script defer>
+  document.getElementById("s01").addEventListener("click", myFunction);
+      function myFunction() {
+        document.getElementsByClassName("s01").style="visibility: collapse";
+      }
+</script>
 </body>
