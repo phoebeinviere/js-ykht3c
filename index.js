@@ -167,7 +167,7 @@ $(document).ready(function () {
         else if (value > fTcolor38 && value <= fTcolor39) {
           $(this).addClass('fTcolor39');
         }
-        else if (value > fTcolor39 && value <= fTcolor40) {
+        else if (value > fTcolor39) {
           $(this).addClass('fTcolor40');
         }
       });
