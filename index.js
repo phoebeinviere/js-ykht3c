@@ -1,7 +1,7 @@
 import './style.css';
 
 $(document).ready(function () {
-  $(this.td).each(
+  $("#percentage").each(
 
     function() {
         var fTcolor1 = 0.02,
