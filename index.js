@@ -1,7 +1,7 @@
 import './style.css';
 
 $(document).ready(function () {
-  $('tbody tr td:not(":first")').each(
+  $('tbody tr td').each(
 
     function() {
         var fTColor1 = 0.02,
