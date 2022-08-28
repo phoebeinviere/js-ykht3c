@@ -4,7 +4,8 @@ $(document).ready(function () {
   $('tbody tr td:not(":first")').each(
 
     function() {
-        var fTcolor1 = 0.02,
+        var fTcolor0 = 0,
+            fTcolor1 = 0.02,
             fTcolor2 = 0.04,
             fTcolor3 = 0.06,
             fTcolor4 = 0.08,
@@ -12,7 +13,7 @@ $(document).ready(function () {
             fTcolor6 = 0.12,
             value = $(this).text();
         
-        if (value = '') {
+        if (value == 0) {
           $(this).addClass('fTcolor0');
         }
         else if (value <= fTcolor1) {
