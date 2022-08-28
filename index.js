@@ -12,19 +12,19 @@ $(document).ready(function () {
             fTcolor6 = 0.12,
             value = $(this).text();
         
-        if (value >= fTcolor1) {
+        if (value <= fTcolor1) {
             $(this).addClass('fTcolor1');
         }
-        else if (value < fTcolor1 && value >= fTcolor2) {
+        else if (value > fTcolor1 && value <= fTcolor2) {
             $(this).addClass('fTcolor2');
         }
-        else if (value <fTcolor3 && value >= fTcolor4) {
+        else if (value > fTcolor3 && value <= fTcolor4) {
             $(this).addClass('fTcolor3');
         }
-        else if (value < fTcolor4&& value >= fTcolor5) {
+        else if (value > fTcolor4&& value <= fTcolor5) {
             $(this).addClass('fTcolor4');
         }
-        else if (value < fTcolor5) {
+        else if (value > fTcolor5) {
             $(this).addClass('fTcolor5');
         }
       });
