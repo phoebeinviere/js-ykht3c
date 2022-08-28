@@ -4,6 +4,10 @@ table {border-collapse: collapse;}
 
 th, td {width: 150px;}
 
+td.fTcolor0 {
+  background-color: white;
+}
+
 td.fTcolor1 {
   background-color: #fafa6e;
 }

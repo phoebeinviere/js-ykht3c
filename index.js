@@ -12,7 +12,10 @@ $(document).ready(function () {
             fTcolor6 = 0.12,
             value = $(this).text();
         
-        if (value <= fTcolor1) {
+        if (value = null) {
+          $(this).addClass('fTcolor0');
+        }
+        else if (value <= fTcolor1) {
             $(this).addClass('fTcolor1');
         }
         else if (value > fTcolor1 && value <= fTcolor2) {
