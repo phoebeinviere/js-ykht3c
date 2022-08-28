@@ -4,10 +4,17 @@ $(document).ready(function () {
   $('tbody tr td:not(":first")').each(
 
     function() {
-        var fTcolor0 = 0,
-            fTcolor1 = 0.02,
-            fTcolor2 = 0.04,
-            fTcolor3 = 0.06,
+        var fTcolor00 = 0,
+            fTcolor01 = 0.02,
+            fTcolor02 = 0.04,
+            fTcolor03 = 0.06,
+            fTcolor04 = 0.08,
+            fTcolor05 = 0.10,
+            fTcolor06 = 0.12,
+            fTcolor07 = 0,
+            fTcolor08 = 0.02,
+            fTcolor09 = 0.04,
+            fTcolor = 0.06,
             fTcolor4 = 0.08,
             fTcolor5 = 0.10,
             fTcolor6 = 0.12,
@@ -16,20 +23,20 @@ $(document).ready(function () {
         if (value == 0) {
           $(this).addClass('fTcolor0');
         }
-        else if (value <= fTcolor1) {
-            $(this).addClass('fTcolor1');
+        else if (value <= fTcolor01) {
+            $(this).addClass('fTcolor01');
         }
-        else if (value > fTcolor1 && value <= fTcolor2) {
-            $(this).addClass('fTcolor2');
+        else if (value > fTcolor01 && value <= fTcolor02) {
+            $(this).addClass('fTcolor02');
         }
-        else if (value > fTcolor3 && value <= fTcolor4) {
-            $(this).addClass('fTcolor3');
+        else if (value > fTcolor03 && value <= fTcolor04) {
+            $(this).addClass('fTcolor03');
         }
-        else if (value > fTcolor4&& value <= fTcolor5) {
-            $(this).addClass('fTcolor4');
+        else if (value > fTcolor04&& value <= fTcolor05) {
+            $(this).addClass('fTcolor04');
         }
-        else if (value > fTcolor5) {
-            $(this).addClass('fTcolor5');
+        else if (value > fTcolor05) {
+            $(this).addClass('fTcolor05');
         }
       });
     });

@@ -4,22 +4,22 @@ table {border-collapse: collapse;}
 
 th, td {width: 150px;}
 
-td.fTcolor0 {
+td.fTcolor00 {
   background-color: white;
 }
 
-td.fTcolor1 {
+td.fTcolor01 {
   background-color: #fafa6e;
 }
 
-td.fTcolor2 {
+td.fTcolor02 {
   background-color: #edf76f;
 }
 
-td.fTcolor3 {
+td.fTcolor03 {
   background-color: #e0f470;
 }
 
-td.fTcolor4 {
+td.fTcolor04 {
   background-color: #d4f171;
 }
