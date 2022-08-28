@@ -20,6 +20,7 @@ $(document).ready(function () {
         }
         else if (value <fTcolor3 && value >= fTcolor4) {
             $(this).addClass('fTcolor3');
+            document.append("fTcolor3 assigned!");
         }
         else if (value < fTcolor4&& value >= fTcolor5) {
             $(this).addClass('fTcolor4');
