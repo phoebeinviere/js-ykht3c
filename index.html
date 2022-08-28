@@ -4,6 +4,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
  crossorigin="anonymous"></script>
 <script>
+  document.getElementById("s01").addEventListener("click", myFunction);
+
+  function myFunction() {
+    document.getElementById(col.s01).style.visibility = "collapse"; 
+}
 </script>
 </head>
 <body>
@@ -12,6 +17,17 @@
   <caption>
     Terpene Profiles (Flower)
   </caption>
+  <col>
+  <col class=s01>
+  <col class=s02>
+  <col class=s03>
+  <col class=s04>
+  <col class=s05>
+  <col class=s06>
+  <col class=s07>
+  <col class=s08>
+  <col class=s09>
+  <col class=s10>
   <thead>
     <tr>
       <th><!-- Intentionally Blank --></th>
@@ -239,5 +255,10 @@
   </tbody>
 </table>
 </div>
-
+<div>
+  <h2>
+    Click on a strain name below to toggle its visibility on or off in the table above.
+  </h2>
+  <button id=s01 onclick="myFunction()">Kushberry</button> 
+</div>
 </body>
