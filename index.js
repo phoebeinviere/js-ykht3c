@@ -29,6 +29,9 @@ $(document).ready(function () {
         else if (value > fTcolor01 && value <= fTcolor02) {
             $(this).addClass('fTcolor02');
         }
+        else if (value > fTcolor02 && value <= fTcolor03) {
+          $(this).addClass('fTcolor02');
+      }
         else if (value > fTcolor03 && value <= fTcolor04) {
             $(this).addClass('fTcolor03');
         }
