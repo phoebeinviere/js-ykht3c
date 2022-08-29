@@ -3,6 +3,16 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
  crossorigin="anonymous"></script>
+<style>
+  .hidden {visibility: collapse;}
+</style>
+ <script>
+ $(document).ready(function(){
+   $("button#s01").click(function(){
+     $("td.s01").addClass("hidden");
+   });
+ });
+ </script>
 </head>
 <body>
 <div style="overflow-x:auto;">
@@ -250,7 +260,7 @@
 </div>
 <div>
 <script defer>
-function myFunction() {
+/* function myFunction() {
   $("tbody tr td.s01").each (
     function() {
       $("td.s01").addClass("hidden");
@@ -258,10 +268,11 @@ function myFunction() {
   )
     }
 document.getElementById("s01").addEventListener("click", myFunction);
+*/
 </script>
   <h2>
     Click on a strain name below to toggle its visibility on or off in the table above.
   </h2>
-  <button id="s01" onclick="myFunction()">Kushberry</button> 
+  <button id="s01">Kushberry</button> 
 </div>
 </body>
