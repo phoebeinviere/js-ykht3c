@@ -3,12 +3,6 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
  crossorigin="anonymous"></script>
- <script>
- document.getElementById("s01").addEventListener("click", myFunction);
-     function myFunction() {
-       document.getElementsByClassName("s01").style="visibility: collapse";
-     }
-</script>
 </head>
 <body>
 <div style="overflow-x:auto;">
@@ -255,6 +249,12 @@
 </table>
 </div>
 <div>
+<script defer>
+document.getElementById("s01").addEventListener("click", myFunction);
+    function myFunction() {
+      document.getElementsByClassName("s01").style="visibility: collapse";
+    }
+</script>
   <h2>
     Click on a strain name below to toggle its visibility on or off in the table above.
   </h2>
