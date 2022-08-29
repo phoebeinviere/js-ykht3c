@@ -2,7 +2,7 @@ table, th, td {border: 1px solid;}
 
 th, td {width: 150px;}
 
-.hidden {visibility: collapse;}
+td.hidden {visibility: collapse;}
 
 td.fTcolor00 {
   background-color: white;

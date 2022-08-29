@@ -250,10 +250,14 @@
 </div>
 <div>
 <script defer>
-document.getElementById("s01").addEventListener("click", myFunction);
-    function myFunction() {
-      $("tbody tr td.s01").toggleClass("hidden");
+function myFunction() {
+  $("tbody tr td.s01").each (
+    function() {
+      $("td.s01").addClass("hidden");
     }
+  )
+    }
+document.getElementById("s01").addEventListener("click", myFunction);
 </script>
   <h2>
     Click on a strain name below to toggle its visibility on or off in the table above.
