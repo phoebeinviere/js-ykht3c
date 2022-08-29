@@ -4,12 +4,16 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
  crossorigin="anonymous"></script>
 <style>
-  .hidden {visibility: collapse;}
+  td.hidden {visibility: collapse;}
 </style>
  <script>
  $(document).ready(function(){
    $("button#s01").click(function(){
-     $("td.s01").addClass("hidden");
+     $("tbody tr td.s01").each(
+       function() {
+        $(this).addClass("hidden");
+       }
+     )
    });
  });
  </script>
