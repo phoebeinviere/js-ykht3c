@@ -14,7 +14,7 @@
  });
  */
 
- $(function() {
+ $(document).ready(function() {
   $('.toggleColumns').on('change', function (event) {
     // get the target for this checkbox and toggle it
     var tableColumn = $(event.currentTarget).data('target');
@@ -24,7 +24,7 @@
 </script>
 </head>
 <body>
-<input class='toggleColumns' type="checkbox" data-target="col01" checked /> KushBerry
+<input class='toggleColumns' type="checkbox" data-target="col01" checked /> Kushberry
 <input class='toggleColumns' type="checkbox" data-target="col02" checked /> Gorilla Cookies II
 <input class='toggleColumns' type="checkbox" data-target="col03" checked /> Gorilla Cookies III
 <div style="overflow-x:auto;">
@@ -33,20 +33,20 @@
     Terpene Profiles (Flower)
   </caption>
   <col>
-  <col class=col01>
-  <col class=col02>
-  <col class=col03>
-  <col class=col04>
-  <col class=col05>
-  <col class=col06>
-  <col class=col07>
-  <col class=col08>
-  <col class=col09>
-  <col class=col10>
+  <col class="col01">
+  <col class="col02">
+  <col class="col03">
+  <col class="col04">
+  <col class="col05">
+  <col class="col06">
+  <col class="col07">
+  <col class="col08">
+  <col class="col09">
+  <col class="col10">
   <thead>
     <tr>
       <th><!-- Intentionally Blank --></th>
-      <th>Kushberry</th>
+      <th class="col01">Kushberry</th>
       <th>Gorilla Cookies II</th>
       <th>Gorilla Cookies III</th>
       <th>Sour Banana Sherbert</th>
@@ -61,7 +61,7 @@
   <tbody>
     <tr>
       <th>Beta-Myrcene</th>
-      <td>0.72</td>
+      <td class="col01">0.72</td>
       <td>0.72</td>
       <td>0.11</td>
       <td>0.72</td>
@@ -74,7 +74,7 @@
     </tr>
     <tr>
       <th>Limonene</th>
-      <td>0.51</td>
+      <td class="col01">0.51</td>
       <td>0.90</td>
       <td>0.63</td>
       <td>0.43</td>
@@ -87,7 +87,7 @@
     </tr>
     <tr>
       <th>Linalool</th>
-      <td>0.23</td>
+      <td class="col01">0.23</td>
       <td>0.21</td>
       <td>0.16</td>
       <td>0.03</td>
@@ -100,7 +100,7 @@
     </tr>
     <tr>
       <th>Beta-Carophyllene</th>
-      <td>0.11</td>
+      <td class="col01">0.11</td>
       <td>0.03</td>
       <td>0.19</td>
       <td>0.28</td>
@@ -113,7 +113,7 @@
     </tr>
     <tr>
       <th>Beta-Pinene</th>
-      <td>0.09</td>
+      <td class="col01">0.09</td>
       <td>0.16</td>
       <td>0.12</td>
       <td>0.10</td>
@@ -126,7 +126,7 @@
     </tr>
     <tr>
       <th>Alpha-Pinene</th>
-      <td>0.07</td>
+      <td class="col01">0.07</td>
       <td>0.10</td>
       <td>0.07</td>
       <td>0.06</td>
@@ -139,7 +139,7 @@
     </tr>
     <tr>
       <th>Alpha-Humulene</th>
-      <td>0.04</td>
+      <td class="col01">0.04</td>
       <td>0.18</td>
       <td>0.07</td>
       <td>0.04</td>
@@ -152,7 +152,7 @@
     </tr>
     <tr>
       <th>Ocimene</th>
-      <td>0.13</td>
+      <td class="col01">0.13</td>
       <td>0.02</td>
       <td></td>
       <td></td>
@@ -165,7 +165,7 @@
     </tr>
     <tr>
       <th>Camphene</th>
-      <td>0.03</td>
+      <td class="col01">0.03</td>
       <td>0.04</td>
       <td>0.03</td>
       <td>0.02</td>
@@ -178,7 +178,7 @@
     </tr>
     <tr>
       <th>Terpinoline</th>
-      <td>0.01</td>
+      <td class="col01">0.01</td>
       <td>0.02</td>
       <td>0.02</td>
       <td>0.01</td>
@@ -191,7 +191,7 @@
     </tr>
     <tr>
       <th>Guaiol</th>
-      <td></td>
+      <td class="col01"></td>
       <td>0.09</td>
       <td>0.09</td>
       <td></td>
@@ -204,7 +204,7 @@
     </tr>
     <tr>
       <th>Alpha-Bisabolol</th>
-      <td></td>
+      <td class="col01"></td>
       <td>0.03</td>
       <td></td>
       <td></td>
@@ -217,7 +217,7 @@
     </tr>
     <tr>
       <th>Alpha-Terpinene</th>
-      <td></td>
+      <td class="col01"></td>
       <td></td>
       <td></td>
       <td></td>
@@ -230,7 +230,7 @@
     </tr>
     <tr>
       <th>Gamma-Terpinene</th>
-      <td></td>
+      <td class="col01"></td>
       <td></td>
       <td></td>
       <td></td>
@@ -243,7 +243,7 @@
     </tr>
     <tr>
       <th>Para-Cymene</th>
-      <td></td>
+      <td class="col01"></td>
       <td></td>
       <td></td>
       <td></td>
@@ -256,7 +256,7 @@
     </tr>
     <tr>
       <th>Eucalyptol</th>
-      <td></td>
+      <td class="col01"></td>
       <td></td>
       <td></td>
       <td></td>
