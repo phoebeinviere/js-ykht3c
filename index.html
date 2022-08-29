@@ -6,35 +6,43 @@
 <style>
   td.hidden {visibility: collapse;}
 </style>
- <script>
- $(document).ready(function(){
-   $("button#s01").click(function(){
-     $("tbody tr td.s01").each(
-       function() {
-        $(this).addClass("hidden");
-       }
-     )
+<script>
+ /* $(document).ready(function(){
+   $("button#col01").click(function(){
+    $("col").toggle();
    });
  });
- </script>
+ */
+
+ $(function() {
+  $('.toggleColumns').on('change', function (event) {
+    // get the target for this checkbox and toggle it
+    var tableColumn = $(event.currentTarget).data('target');
+    $('.' + tableColumn).toggle();
+  });
+})
+</script>
 </head>
 <body>
+<input class='toggleColumns' type="checkbox" data-target="col01" checked /> KushBerry
+<input class='toggleColumns' type="checkbox" data-target="col02" checked /> Gorilla Cookies II
+<input class='toggleColumns' type="checkbox" data-target="col03" checked /> Gorilla Cookies III
 <div style="overflow-x:auto;">
   <table id="flowerTerpenes">
   <caption>
     Terpene Profiles (Flower)
   </caption>
   <col>
-  <col class=s01>
-  <col class=s02>
-  <col class=s03>
-  <col class=s04>
-  <col class=s05>
-  <col class=s06>
-  <col class=s07>
-  <col class=s08>
-  <col class=s09>
-  <col class=s10>
+  <col class=col01>
+  <col class=col02>
+  <col class=col03>
+  <col class=col04>
+  <col class=col05>
+  <col class=col06>
+  <col class=col07>
+  <col class=col08>
+  <col class=col09>
+  <col class=col10>
   <thead>
     <tr>
       <th><!-- Intentionally Blank --></th>
@@ -265,18 +273,18 @@
 <div>
 <script defer>
 /* function myFunction() {
-  $("tbody tr td.s01").each (
+  $("tbody tr td.col01").each (
     function() {
-      $("td.s01").addClass("hidden");
+      $("td.col01").addClass("hidden");
     }
   )
     }
-document.getElementById("s01").addEventListener("click", myFunction);
+document.getElementById("col01").addEventListener("click", myFunction);
 */
 </script>
   <h2>
     Click on a strain name below to toggle its visibility on or off in the table above.
   </h2>
-  <button id="s01">Kushberry</button> 
+  <button id="col01">Kushberry</button> 
 </div>
 </body>
