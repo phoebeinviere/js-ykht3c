@@ -252,8 +252,7 @@
 <script defer>
 document.getElementById("s01").addEventListener("click", myFunction);
     function myFunction() {
-      hideColumn = document.getElementsByClassName("s01");
-      document.append(hideColumn);
+      $( ".s01" ).css( "visibility", "collapse" );
     }
 </script>
   <h2>
